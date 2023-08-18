@@ -1,4 +1,5 @@
 FROM ibm-semeru-runtimes:open-20-jdk-jammy
+EXPOSE 25565
 RUN useradd -m server
 RUN apt-get update && apt-get install -y wget vim
 WORKDIR /home/server
