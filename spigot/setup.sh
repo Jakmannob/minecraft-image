@@ -8,7 +8,10 @@ cd spigot-server
 java -Xms6G -Xmx6G -XX:+UseG1GC -jar spigot.jar nogui
 
 # * Set up server icon
-cp ../server-icon.png .
+mv ../server-icon.png .
+
+# * Set up server properties
+mv ../server.properties .
 
 # * Accept EULA
 # Strip last line

@@ -40,5 +40,10 @@ RUN ./build.sh
 # Set up server
 RUN ./setup.sh
 
+# Change directory
+WORKDIR /home/server/spigot-server
+
 # Run server
 CMD ["java", "-Xms6G", "-Xmx6G", "-XX:+UseG1GC", "-jar", "spigot.jar", "nogui"]
+# * Change to access shell
+#CMD ["bash"]
