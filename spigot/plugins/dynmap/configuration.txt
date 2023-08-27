@@ -111,7 +111,7 @@ components:
   #  hidenames: false
    
   - class: org.dynmap.SimpleWebChatComponent
-    allowchat: true
+    allowchat: false
     # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
     allowurlname: false
   
@@ -504,6 +504,7 @@ soft-ref-cache: true
 
 # Published public URL for Dynmap server (allows users to use 'dynmap url' command to get public URL usable to access server
 # If not set, 'dynmap url' will not return anything.  URL should be fully qualified (e.g. https://mc.westeroscraft.com/)
+# TODO: Adjust?
 #publicURL: http://my.greatserver.com/dynmap
 
 # Send this message if the player does not have permission to use the command
