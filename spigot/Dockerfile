@@ -27,6 +27,11 @@ COPY setup.sh .
 RUN chown server:server setup.sh
 RUN chmod +x setup.sh
 
+# Set up plugins download script
+COPY download-plugins.sh .
+RUN chown server:server download-plugins.sh
+RUN chmod +x download-plugins.sh
+
 # Set up server properties
 COPY server.properties .
 RUN chown server:server server.properties
@@ -39,6 +44,9 @@ RUN ./build.sh
 
 # Set up server
 RUN ./setup.sh
+
+# Set up server
+RUN ./download-plugins.sh
 
 # Change directory
 WORKDIR /home/server/spigot-server
