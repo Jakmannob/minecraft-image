@@ -10,5 +10,11 @@ java -Xms6G -Xmx6G -XX:+UseG1GC -jar spigot.jar nogui
 # * Set up server icon
 cp ../server-icon.png .
 
+# * Accept EULA
+# Strip last line
+sed -i '$ d' eula.txt
+# Replace with TRUE
+echo 'eula=TRUE' >> eula.txt
+
 # * Exit server directory
 cd ..
