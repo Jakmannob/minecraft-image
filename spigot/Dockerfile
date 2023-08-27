@@ -25,7 +25,7 @@ RUN chmod +x build.sh
 # Set up setup script
 COPY setup.sh .
 RUN chown server:server setup.sh
-RUN chmod +x start.sh
+RUN chmod +x setup.sh
 
 # Set up server properties
 COPY server.properties .
