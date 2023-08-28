@@ -41,9 +41,18 @@ COPY download-plugins.sh .
 RUN chown server:server download-plugins.sh
 RUN chmod +x download-plugins.sh
 
+# Set up update configs script
+COPY update-configs.sh .
+RUN chown server:server update-configs.sh
+RUN chmod +x update-configs.sh
+
 # Set up server properties
 COPY server.properties .
 RUN chown server:server server.properties
+
+# Set up plugin config files
+COPY plugins .
+RUN chown -R server:server plugins
 
 # Change user
 USER server
@@ -53,6 +62,9 @@ RUN ./download-plugins.sh
 
 # Set up server
 RUN ./setup.sh
+
+# Set up plugin configs
+RUN ./update-configs.sh
 
 # Change directory
 WORKDIR /home/server/spigot-server

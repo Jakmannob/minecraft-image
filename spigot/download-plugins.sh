@@ -30,4 +30,7 @@ wget -O dynmap.jar https://mediafilez.forgecdn.net/files/4632/182/Dynmap-3.6-spi
 # Grief Prevention
 wget -O griefprevention.jar https://mediafilez.forgecdn.net/files/4433/61/GriefPrevention.jar
 
-mv ~/*.jar spigot-server/plugins/
+
+# * Copy the .jar files into the plugins folder
+mkdir -p /home/server/spigot-server/plugins
+cp *.jar /home/server/spigot-server/plugins
