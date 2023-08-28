@@ -12,13 +12,13 @@
 
 # The token for your bot from the Discord Developers site.
 # Please make sure to use this site to add the bot to your server as it grants special permissions you may not be familiar with: https://essentialsx.net/discord.html
-token: "INSERT-TOKEN-HERE"
+token: "MTE0NTY2Mjc2OTU4NTIwNTI1OA.GpAnef.ocJfPUIsexO28NLnG59-oMmEd5XSPOugF0Fac8"
 
 # The ID of your server.
-guild: 000000000000000000
+guild: 1145440555241836564
 
 # The Discord invite URL that will be shown when a player when using the /discord command or in other areas.
-discord-url: "https://discord.gg/invite-code"
+discord-url: "https://discord.gg/vbmfSaEC4g"
 
 # Defined text channels
 # =====================
@@ -38,8 +38,8 @@ discord-url: "https://discord.gg/invite-code"
 # - staff, which will send kick/mute messages
 # (note: you will need to replace the zeros with the actual channel ID you want to use)
 channels:
-  primary: 000000000000000000
-  staff: 000000000000000000
+  primary: 1145665721930616933
+  staff: 0000000000000000000
 
 # Should all players receive Discord messages from the primary channel, regardless of their permissions?
 # This is intended for use for people without permission plugins. If you have a permission plugin, please give your
@@ -80,7 +80,7 @@ console:
   # The channel ID (or webhook URL) to send the console output to.
   # If the channel ID/webhook URL is invalid or set to 'none', the console relay will be disabled.
   # Note: If you use a channel ID, the bot must have the "Manage Webhooks" permission in Discord or else the console relay will not work.
-  channel: 000000000000000000
+  channel: 1145666562041335899
   # The format of the console message. The following placeholders can be used:
   # - {timestamp}: Timestamp in HH:mm:ss format
   # - {level}: The console logging level
@@ -184,8 +184,7 @@ commands:
     hide-command: true
     # List of user IDs or role names/IDs allowed to use this command (or * to allow anyone to access it).
     allowed-roles:
-      - "Admins"
-      - "123456789012345678"
+      - "Admin"
   # The msg command allows for Discord users to message MC players from Discord.
   msg:
     # Set to false if you do not want this command to show up on the Discord command selector.
@@ -201,8 +200,7 @@ commands:
     # used, all people on Discord would be allowed to message vanished players (and therefore expose they are actually online)
     # and message players who disable messages.
     admin-roles:
-      - "Admins"
-      - "123456789012345678"
+      - "Admin"
   # The list command allows Discord users to see a list of players currently online on Minecraft.
   list:
     # Set to false if you do not want this command to show up on the Discord command selector.
@@ -217,8 +215,7 @@ commands:
     # List of user IDs or role names/IDs who can see vanished players in the player list. If '*' is used, all people
     # on Discord would be allowed to see vanished players (and therefore expose they are actually online).
     admin-roles:
-      - "Admins"
-      - "123456789012345678"
+      - "Admin"
 
 # Whether or not links to attachments in Discord messages should be displayed in chat or not.
 # If this is set to false and a message from Discord only contains an image/file and not any text, nothing will be sent.
@@ -227,8 +224,6 @@ show-discord-attachments: true
 # A list of roles which should be ignored by the {color} and {role} placeholders.
 # for the Discord->MC chat format.
 discord-role-blacklist:
-  - "123456789012345678"
-  - "Members"
 
 # Role aliases allow you to replace the role names with something different in the Discord->MC chat relay format.
 # If you are using role aliases, make sure to remove the '#' at the start to allow the setting to be read.
@@ -240,7 +235,7 @@ discord-roles-aliases:
 # This applies to all aspects such as that Discord->MC chat relay as well as commands.
 # You can either use '*' (for everyone), a role name/ID, or a user ID.
 permit-formatting-roles:
-  - "Admins"
+  - "Admin"
   - "Color Codes"
 
 # The presence of the bot, including its status, activity and status message.
