@@ -51,7 +51,7 @@ COPY server.properties .
 RUN chown server:server server.properties
 
 # Set up plugin config files
-COPY plugins .
+COPY plugin-settings .
 RUN chown -R server:server plugins
 
 # Change user
@@ -70,6 +70,6 @@ RUN ./update-configs.sh
 WORKDIR /home/server/spigot-server
 
 # Run server
-CMD ["java", "-Xms6G", "-Xmx6G", "-XX:+UseG1GC", "-jar", "spigot.jar", "nogui"]
+CMD ["java", "-Xms12G", "-Xmx12G", "-XX:+UseG1GC", "-jar", "spigot.jar", "nogui"]
 # * Change to access shell
 #CMD ["bash"]
