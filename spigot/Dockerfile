@@ -2,7 +2,7 @@
 FROM ibm-semeru-runtimes:open-20-jdk-jammy
 
 # Open the required port for the minecraft server
-EXPOSE 25565
+EXPOSE 25565 8123
 
 # Add a nonprivileged user
 RUN useradd -m server
@@ -22,6 +22,15 @@ COPY build.sh .
 RUN chown server:server build.sh
 RUN chmod +x build.sh
 
+# Change user
+USER server
+
+# Build server
+RUN ./build.sh
+
+# Change user
+USER root
+
 # Set up setup script
 COPY setup.sh .
 RUN chown server:server setup.sh
@@ -39,14 +48,11 @@ RUN chown server:server server.properties
 # Change user
 USER server
 
-# Build server
-RUN ./build.sh
+# Download plugins
+RUN ./download-plugins.sh
 
 # Set up server
 RUN ./setup.sh
-
-# Set up server
-RUN ./download-plugins.sh
 
 # Change directory
 WORKDIR /home/server/spigot-server
