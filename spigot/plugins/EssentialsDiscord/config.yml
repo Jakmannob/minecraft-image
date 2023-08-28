@@ -38,7 +38,8 @@ discord-url: "https://discord.gg/vbmfSaEC4g"
 # - staff, which will send kick/mute messages
 # (note: you will need to replace the zeros with the actual channel ID you want to use)
 channels:
-  primary: 1145665721930616933
+  primary: 1145675046661140551
+  chat: 1145665721930616933
   staff: 0000000000000000000
 
 # Should all players receive Discord messages from the primary channel, regardless of their permissions?
@@ -48,7 +49,7 @@ always-receive-primary: false
 
 # Whether to use Essentials Chat events instead of normal chat event.
 # This allows you to filter chat by its type (local, question, shout).
-use-essentials-events: false
+use-essentials-events: true
 
 # Chat relay settings
 # General settings for chat relays between Minecraft and Discord.
@@ -121,21 +122,21 @@ console:
 # To disable a message from showing, use 'none' as the channel name.
 message-types:
   # Join messages sent when a player joins the Minecraft server.
-  join: primary
+  join: none
   # Join messages sent when a player joins the Minecraft server for the first time. This type is sent instead of the join type.
   first-join: primary
   # Leave messages sent when a player leaves the Minecraft server.
-  leave: primary
+  leave: none
   # Chat messages sent when a player chats on the Minecraft server.
-  chat: primary
+  chat: none
   # Death messages sent when a player dies on the Minecraft server.
-  death: primary
+  death: none
   # AFK status change messages sent when a player's AFK status changes.
-  afk: primary
+  afk: none
   # Achievement/advancement messages sent when a player is awarded an achievement/advancement.
   advancement: primary
   # Action messages sent when a player runs the /me or /action commands.
-  action: primary
+  action: none
   # Message sent when the server starts up.
   server-start: primary
   # Message sent when the server shuts down.
@@ -149,10 +150,10 @@ message-types:
   local: none
   # Message sent when a player asks a question in global chat.
   # use-essentials-events must be set to "true" for this to work.
-  question: primary
+  question: chat
   # Message sent when a player talks in global chat.
   # use-essentials-events must be set to "true" for this to work.
-  shout: primary
+  shout: chat
 
 # Whether or not player messages should show their avatar as the profile picture in Discord.
 # The bot will require the "Manage Webhooks" permission in the defined channels in order to use this feature.
