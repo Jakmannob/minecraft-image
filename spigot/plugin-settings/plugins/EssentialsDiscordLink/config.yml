@@ -48,5 +48,5 @@ role-sync:
   # Users with the following roles listed here will receive the corresponding group in Minecraft when they link
   # their Discord account to their Minecraft account.
   roles:
-    22222222222222222: vip
-    33333333333333333: booster
+    1146044865856159855: einwohner
+    1146044900488515715: könig
