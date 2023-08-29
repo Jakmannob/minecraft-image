@@ -31,7 +31,10 @@ wget -O dynmap.jar https://mediafilez.forgecdn.net/files/4632/182/Dynmap-3.6-spi
 wget -O griefprevention.jar https://mediafilez.forgecdn.net/files/4433/61/GriefPrevention.jar
 
 # Chest Shop
-wget -O ChestShop.jar https://ci.minebench.de/job/ChestShop-3/lastSuccessfulBuild/artifact/target/ChestShop.jar
+wget -O chestshop.jar https://ci.minebench.de/job/ChestShop-3/lastSuccessfulBuild/artifact/target/ChestShop.jar
+
+# Multiverse Portals
+wget -O multiverseportals.jar https://github.com/Multiverse/Multiverse-Portals/releases/download/4.2.3/multiverse-portals-4.2.3.jar
 
 # * Copy the .jar files into the plugins folder
 mkdir -pv /home/server/spigot-server/plugins
