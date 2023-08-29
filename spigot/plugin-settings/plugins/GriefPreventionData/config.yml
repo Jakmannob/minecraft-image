@@ -10,6 +10,7 @@ GriefPrevention:
       kommunaler-server_nether: Disabled
       kommunaler-server: Survival
       kommunaler-server_the_end: Disabled
+      kommunaler-server-farm: Disabled
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
@@ -24,25 +25,25 @@ GriefPrevention:
     ProtectLlamas: true
     InitialBlocks: 100
     Claim Blocks Accrued Per Hour:
-      Default: 100
+      Default: 0
     Max Accrued Claim Blocks:
       Default: 80000
     Accrued Idle Threshold: 0
     AccruedIdlePercent: 0
     AbandonReturnRatio: 1.0
-    AutomaticNewPlayerClaimsRadius: 4
+    AutomaticNewPlayerClaimsRadius: -1
     AutomaticNewPlayerClaimsRadiusMinimum: 0
     ExtendIntoGroundDistance: 5
     MinimumWidth: 5
-    MinimumArea: 100
+    MinimumArea: 25
     MaximumDepth: -2147483648
     InvestigationTool: STICK
     ModificationTool: GOLDEN_SHOVEL
     Expiration:
-      ChestClaimDays: 7
-      UnusedClaimDays: 14
+      ChestClaimDays: 90
+      UnusedClaimDays: 180
       AllClaims:
-        DaysInactive: 60
+        DaysInactive: 360
         ExceptWhenOwnerHasTotalClaimBlocks: 10000
         ExceptWhenOwnerHasBonusClaimBlocks: 5000
       AutomaticNatureRestoration:
@@ -75,6 +76,7 @@ GriefPrevention:
       kommunaler-server: true
       kommunaler-server_nether: true
       kommunaler-server_the_end: true
+      kommunaler-server-farm: true
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 15
@@ -93,8 +95,8 @@ GriefPrevention:
     ProtectPetsOutsideLandClaims: false
   Economy:
     ClaimBlocksMaxBonus: 0
-    ClaimBlocksPurchaseCost: 0.0
-    ClaimBlocksSellValue: 0.0
+    ClaimBlocksPurchaseCost: 10.0
+    ClaimBlocksSellValue: 5.0
   ProtectItemsDroppedOnDeath:
     PvPWorlds: false
     NonPvPWorlds: true
@@ -112,7 +114,7 @@ GriefPrevention:
   VisualizationAntiCheatCompatMode: false
   SmartBan: true
   Mute New Players Using Banned Words: true
-  MaxPlayersPerIpAddress: 3
+  MaxPlayersPerIpAddress: 10
   SilenceBans: true
   Siege:
     Worlds: []
