@@ -36,6 +36,13 @@ wget -O chestshop.jar https://ci.minebench.de/job/ChestShop-3/lastSuccessfulBuil
 # Multiverse Portals
 wget -O multiverseportals.jar https://github.com/Multiverse/Multiverse-Portals/releases/download/4.2.3/multiverse-portals-4.2.3.jar
 
+# AutoStop
+wget -O autostop.jar https://github.com/pmdevita/AutoStop/releases/download/1.0/AutoStop-1.0-SNAPSHOT.jar
+
+# Chunky
+# If not working, get it from https://www.spigotmc.org/resources/chunky.81534/ and install manually
+wget -O chunky.jar https://cdn.modrinth.com/data/fALzjamp/versions/B0xkCkk4/Chunky-1.3.92.jar
+
 # * Copy the .jar files into the plugins folder
 mkdir -pv /home/server/spigot-server/plugins
 cp -v *.jar /home/server/spigot-server/plugins
