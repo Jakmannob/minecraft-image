@@ -8,7 +8,7 @@ GriefPrevention:
   Claims:
     Mode:
       kommunaler-server_nether: Disabled
-      kommunaler-server: Creative
+      kommunaler-server: SurvivalRequiringClaims
       kommunaler-server_the_end: Disabled
       kommunaler-server-farm: Disabled
     PreventGlobalMonsterEggs: true
@@ -38,7 +38,7 @@ GriefPrevention:
     MinimumArea: 25
     MaximumDepth: -2147483648
     InvestigationTool: STICK
-    ModificationTool: GOLDEN_SHOVEL
+    ModificationTool: WOODEN_SHOVEL
     Expiration:
       ChestClaimDays: 90
       UnusedClaimDays: 180
