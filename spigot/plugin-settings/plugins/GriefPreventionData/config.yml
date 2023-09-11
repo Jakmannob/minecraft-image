@@ -3,8 +3,11 @@
 GriefPrevention:
   SeaLevelOverrides:
     kommunaler-server: -1
-    kommunaler-server_nether: -1
-    kommunaler-server_the_end: -1
+    kommunaler-server_nether: 256
+    kommunaler-server_the_end: 256
+    kommunaler-server-farm: 256
+    pvp: 256
+    advenmture: 256
   Claims:
     Mode:
       kommunaler-server_nether: Disabled
