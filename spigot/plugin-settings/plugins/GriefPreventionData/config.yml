@@ -8,7 +8,7 @@ GriefPrevention:
   Claims:
     Mode:
       kommunaler-server_nether: Disabled
-      kommunaler-server: Survival
+      kommunaler-server: Creative
       kommunaler-server_the_end: Disabled
       kommunaler-server-farm: Disabled
     PreventGlobalMonsterEggs: true
