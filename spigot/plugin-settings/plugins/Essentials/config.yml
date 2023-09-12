@@ -360,25 +360,25 @@ use-nbt-serialization-in-createkit: false
 
 enabledSigns:
   #- color
-  #- balance
-  #- buy
-  #- sell
-  #- trade
-  #- free
+  - balance
+  - buy
+  - sell
+  - trade
+  - free
   #- warp
   #- kit
-  #- mail
+  - mail
   #- enchant
   #- gamemode
-  #- heal
+  - heal
   #- info
   #- spawnmob
-  #- repair
+  - repair
   #- time
   #- weather
   #- anvil
   #- cartography
-  #- disposal
+  - disposal
   #- grindstone
   #- loom
   #- smithing
