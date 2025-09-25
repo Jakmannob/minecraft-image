@@ -8,7 +8,7 @@ EXPOSE 25565 8123
 RUN useradd -m server
 
 # Install necessary packages
-RUN apt-get update && apt-get install -y wget vim git
+RUN apt-get update && apt-get install -y wget vim git unzip
 
 # Change directory
 WORKDIR /home/server
