@@ -41,6 +41,6 @@ done
 rm *.zip
 
 # * Copy the datapacks into the datapacks directory
-mkdir -pv /home/server/spigot-server/datapacks/
-cp -v -r * /home/server/spigot-server/datapacks
-ls /home/server/spigot-server/datapacks
+mkdir -pv /home/server/datapacks/
+cp -v -r * /home/server/datapacks
+ls /home/server/datapacks
