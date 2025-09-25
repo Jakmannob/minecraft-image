@@ -1,5 +1,5 @@
 # Select base image (openjdk 21)
-FROM ibm-semeru-runtimes:open-21-jdk-noble
+FROM eclipse-temurin:21-jdk
 
 # Open the required port for the minecraft server
 EXPOSE 25565 8123
